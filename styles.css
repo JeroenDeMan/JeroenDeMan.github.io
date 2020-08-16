@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e4ebea;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: #333;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+nav li a{
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 18px;
+  margin: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav li a:hover, nav li a:active{
+  background-color: #8c8889;
+}
+
+.content{
+  padding: 0px 30px;
+}
+
+h1, h2, p, ul, tr{
+  font-family:sans-serif;
+}
+
+article{
+  margin: 50px;
+}
+
+article ul{
+  padding: 10px 40px;
+}
+
+article a{
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  color: #777a7a;
+}
+
+.greeting{
+  padding: 25px 0px;
+  text-align: center;
+}
+
+
+h1, h2{
+  text-align: center;
+  margin:20px 0px 10px 0px;
+}
+
+#profile{
+  float: left;
+  margin: 10px 25px;
+  border-radius: 50%;
+}
+
+#fonne{
+  float: right;
+  margin: 10px 25px;
+  border-radius: 20%;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: #333;
+}
+
+table{
+  width: 100%;
+}
+
+th, td{
+  text-align: center;
+  padding: 5px;
+
+}
+
+tr:nth-child(even){
+  background-color: #c5c9c9;
+}
+
+#f1{
+  display: block;
+  margin: 0 auto;
+}
+
+.formula-introduction li{
+  margin-bottom: 10px;
+}
+
+.slideshow-container img{
+  width: 100%;
+}
+
+.slideshow-container {
+  padding: 0px 30px;
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media only screen and (min-width: 650px){
+ nav li a{
+   font-size: 18px;
+ }
+
+ .content{
+   width: 650px;
+   margin: auto;
+ }
+
+ #linkedin{
+   width: 30px;
+ }
+
+ .slideshow-container img{
+   width: 100%;
+ }
+ .slideshow-container {
+   max-width: 500px;
+ }
+
+}
